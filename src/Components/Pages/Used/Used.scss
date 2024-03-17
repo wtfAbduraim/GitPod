@@ -1,0 +1,134 @@
+.used {
+  margin-top: 150px;
+  .container_2 {
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 24px;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  &__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__item {
+    width: 384px;
+    height: 220px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 12px;
+  }
+
+  &__heading {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    width: 336px;
+    text-align: left;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+  }
+
+  &__flex {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__nick {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+  }
+
+  &__comment {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+  }
+
+  &__span {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+  }
+
+  &__inner {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 130px;
+  }
+
+  &__brend {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .used__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .used__item {
+    margin-top: 20px;
+  }
+
+  .used__inner {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .used__inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .used__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 350px) {
+  .used__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
