@@ -5,6 +5,7 @@ import Think from "../Pages/Think/Think";
 import Remo from "../Pages/Remo/Remo";
 import Used from "../Pages/Used/Used";
 import Get from "../Pages/Get/Get";
+import Footer from "../Pages/Footer/Footer"
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Remo />
       <Used />
       <Get />
+      <Footer />
     </>
   );
 }
